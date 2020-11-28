@@ -19,6 +19,8 @@ def main():
                 cursor.execute(sql_statement, records)
                 print('Inserindo registro: {} e {}'.format(row[0],row[1]))
             con.commit()
+            cursor.close()
+            con.close()
     except FileNotFoundError as error:
         print(error)
 
