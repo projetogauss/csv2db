@@ -1,0 +1,10 @@
+CREATE TABLE public.tab_cad
+(
+  data character(50),
+  valor character(50)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.tab_cad
+  OWNER TO postgres;
